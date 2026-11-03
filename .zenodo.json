@@ -1,0 +1,45 @@
+{
+  "title": "Verified Chinese PCB and wire-harness supplier records (release 2026.11.03)",
+  "upload_type": "dataset",
+  "publication_date": "2026-11-03",
+  "version": "2026.11.03",
+  "language": "eng",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "creators": [
+    {
+      "name": "Sichuan Zhiqi Technology & Culture Co., Ltd.",
+      "affiliation": "Suining, Sichuan, China"
+    }
+  ],
+  "description": "<p>Records of 25 electronics manufacturers in China (20 PCB fabrication plants, 5 wire-harness and cable-assembly plants), each reduced to fifteen published fields: legal entity and unified social credit code, founding date, city, registry industry code, social-insurance headcount, group headcount, revenue with its reference year, capacity statements, process limits, certification claims, and the number of fields that entity actually publishes.</p><p>Every value carries the source it was read from; 124 external source URLs are keyed to the record that cites them, and 408 field-level rows record the exact source note for each field. Two headcount definitions are kept in separate columns and are never merged: social-insurance contributors at the legal person, and consolidated group employees. Where a company publishes two contradictory figures, both are recorded; where a company publishes nothing, the cell is blank rather than estimated, and three entities that were measured and refused a profile are recorded with the reason.</p><p>Companion documentation, including the field dictionary and the method used for each column, is at https://emssuppliersverified.com/dataset. The directory that produces this dataset is independent: manufacturers cannot pay to be listed, no entity is ranked by quality, and no figure in the files was estimated.</p>",
+  "keywords": [
+    "printed circuit boards",
+    "PCB manufacturing",
+    "wire harness",
+    "cable assembly",
+    "China manufacturing",
+    "supplier verification",
+    "supply chain due diligence",
+    "corporate disclosure",
+    "open data"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://emssuppliersverified.com/dataset",
+      "relation": "is documented by",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://emssuppliersverified.com/facts",
+      "relation": "is documented by",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/wzhi36535-code/china-pcb-supplier-data",
+      "relation": "is identical to",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Blank cells mean the manufacturer publishes nothing on that field, not that the value is zero. Ratios are computed only where both figures are published by the same company. Release 2026.11.03 covers 25 profiles; the disclosure census quoted on the site is dated 2026-11-01 and is not recomputed when a profile is added."
+}
