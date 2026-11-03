@@ -1,0 +1,675 @@
+{
+  "name": "china-pcb-wire-harness-verified-suppliers",
+  "title": "Verified Chinese PCB and wire-harness supplier records",
+  "description": "28 company records from emssuppliersverified.com: 25 profiled factories (20 PCB, 5 wire harness) and 3 screened-out entities. Two separate headcount series (social-insurance contributors vs group employees), revenue with its year, and registry industry codes. Every value is sourced; blanks mean the factory publishes nothing on that field.",
+  "version": "2026.11.03",
+  "created": "2026-11-03",
+  "keywords": [
+    "PCB",
+    "wire harness",
+    "China",
+    "supplier verification",
+    "due diligence",
+    "USCC",
+    "manufacturing",
+    "supply chain",
+    "open data"
+  ],
+  "homepage": "https://emssuppliersverified.com",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "sources": [
+    {
+      "title": "emssuppliersverified.com — supplier verification profiles",
+      "path": "https://emssuppliersverified.com"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "emssuppliersverified.com",
+      "path": "https://emssuppliersverified.com/about"
+    }
+  ],
+  "resources": [
+    {
+      "name": "plants",
+      "path": "plants.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "slug",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "profile_url",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "status_note",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "sector",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "legal_name_en",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "legal_name_cn",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "uscc",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "stock_codes",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "parent_ticker",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "founded_date",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "address_en",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "province",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "website",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "industry_code",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "industry_note",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "insured_headcount",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "group_headcount",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "group_over_insured",
+            "type": "number",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "headcount_note",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "revenue_cny",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "revenue_year",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "revenue_basis",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "revenue_text",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "identity_rows",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "numbered_fields",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "last_checked",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "screened_out",
+      "path": "screened_out.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "slug",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "profile_url",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "status_note",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "sector",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "legal_name_en",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "legal_name_cn",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "uscc",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "stock_codes",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "parent_ticker",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "founded_date",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "address_en",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "province",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "website",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "industry_code",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "industry_note",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "insured_headcount",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "group_headcount",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "group_over_insured",
+            "type": "number",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "headcount_note",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "revenue_cny",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "revenue_year",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "revenue_basis",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "revenue_text",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "identity_rows",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "numbered_fields",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "last_checked",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "fields",
+      "path": "fields.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "plant_slug",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "field_no",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "field_name",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "value",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "source_note",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "source_url",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "profile_url",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "sources",
+      "path": "sources.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "plant_slug",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "profile_url",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "clusters",
+      "path": "clusters.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "cluster",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "plants",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "sectors",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "members",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "insured_total",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "insured_coverage",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "group_total",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "group_coverage",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "staff_total_published",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "revenue_cny",
+            "type": "integer",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "revenue_coverage",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "note",
+            "type": "string",
+            "constraints": {
+              "required": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "dataset",
+      "path": "dataset.json",
+      "profile": "data-resource",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8"
+    }
+  ]
+}
